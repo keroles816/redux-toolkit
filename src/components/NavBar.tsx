@@ -26,6 +26,25 @@ const NavBar = () => {
           <Link to="/Contat">Contact</Link>
         </li>
       </ul>
+
+      <ul
+        className="flex justify-center items-center  gap-[75px] font-poppins 
+      font-semibold 
+      "
+      >
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/shop">Shop</Link>
+        </li>
+        <li>
+          <Link to="/About">About</Link>
+        </li>
+        <li>
+          <Link to="/Contat">Contact</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
