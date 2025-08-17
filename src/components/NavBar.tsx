@@ -6,14 +6,14 @@ import search from "../assets/Icons/search.png";
 import shopingcart from "../assets/Icons/shopingcart.png";
 const NavBar = () => {
   return (
-    <nav className="flex flex-row items-center justify-between py-8 px-6">
+    <nav className="flex flex-row relative items-center justify-between py-8 px-6">
       <div className="flex justify-center items-center gap-2">
         <img src={MeubelLogo} alt="home logo" />
         <h3 className="font-bold text-4xl font-montserrat">Furniro</h3>
       </div>
 
       <ul
-        className="flex justify-center items-center  gap-[75px] font-poppins 
+        className="flex justify-center absolute right-96 items-center ml-8 gap-[75px] font-poppins 
       font-semibold 
       "
       >
@@ -32,7 +32,7 @@ const NavBar = () => {
       </ul>
 
       <ul
-        className="flex justify-center items-center  gap-6
+        className="flex justify-center items-center  gap-9
     
       "
       >
