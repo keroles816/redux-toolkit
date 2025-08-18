@@ -19,10 +19,9 @@ export default {
         black: "900",
       },
       colors: {
-        brandBlue: "#B8732F",
-        brandGreen: "#17BF63",
-        dashboardBg: "#F4F6F8",
-        graphPurple: "#6B21A8",
+        primary: "#B88E2F",
+        lightPrimary: "#FFF3E3",
+        darkPrimary: "#B8732F",
       },
     },
   },
