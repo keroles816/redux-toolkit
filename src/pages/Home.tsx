@@ -38,12 +38,16 @@ const Home = () => {
       </section>
 
       <section className="max-w-7xl py-12">
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center flex-col">
           <h3 className="text-center font-poppins text-2xl font-bold ">
             Browse The Range
           </h3>
-          <p className=""></p>
+          <p className="font-poppins font-light text-xl mt-2 font-[#666666]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
         </div>
+
+        <div></div>
       </section>
     </div>
   );
