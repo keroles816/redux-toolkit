@@ -36,6 +36,15 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="max-w-7xl py-12">
+        <div className="flex justify-center">
+          <h3 className="text-center font-poppins text-2xl font-bold ">
+            Browse The Range
+          </h3>
+          <p className=""></p>
+        </div>
+      </section>
     </div>
   );
 };
