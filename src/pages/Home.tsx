@@ -67,6 +67,15 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="max-w-8xl flex justify-center items-center">
+        <h3 className=" font-poppins text-2xl font-bold"> Our Products</h3>
+        <div
+          className="grid grid-col-3 justify-center items-center 
+        gap-3
+        "
+        ></div>
+      </section>
     </div>
   );
 };
