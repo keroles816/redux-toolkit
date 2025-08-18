@@ -13,10 +13,12 @@ const Home = () => {
           <div
             className="absolute 
            right-10 top-1/2 transform -translate-y-1/2
-            bg-lightPrimary"
+            bg-lightPrimary
+            rounded-md
+            "
           >
-            <div className="px-8 py-8 max-w-3xl">
-              <p className=" font-poppins  text-xl">New Arrival</p>
+            <div className="px-10 py-10 max-w-xl">
+              <p className=" font-poppins mt-4 text-xl">New Arrival</p>
               <h3 className=" font-poppins font-bold text-darkPrimary text-5xl mt-2">
                 Discover Our <br></br>New Collection
               </h3>
@@ -25,6 +27,11 @@ const Home = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis
               </p>
+              <button className="bg-primary py-4 mt-6 px-8 shadow-md ">
+                <p className="font-poppins text-white font-bold  text-l">
+                  BUY NOW
+                </p>
+              </button>
             </div>
           </div>
         </div>
