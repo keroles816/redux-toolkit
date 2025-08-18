@@ -1,5 +1,8 @@
 import NavBar from "../components/NavBar.tsx";
 import backgroundHomeImage from "../assets/photos/backgroundHomeImage.png";
+import Dining from "../assets/photos/Dining.png";
+import living from "../assets/photos/living.png";
+import BedRoom from "../assets/photos/BedRoom.png";
 const Home = () => {
   return (
     <div className=" min-w-full h-full">
@@ -37,7 +40,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="max-w-7xl py-12">
+      <section className="max-w-8xl py-12">
         <div className="flex justify-center items-center flex-col">
           <h3 className="text-center font-poppins text-2xl font-bold ">
             Browse The Range
@@ -47,7 +50,22 @@ const Home = () => {
           </p>
         </div>
 
-        <div></div>
+        <div className="flex justify-center mt-8 gap-4 items-center ">
+          <div className="flex flex-col justify-center items-center">
+            <img src={Dining} alt="Dining" />
+            <p className="text-center mt-2 font-semiBold text-xl">Dining</p>
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <img src={living} alt="Living" />
+            <p className="text-center mt-2 font-semiBold text-xl">living</p>
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <img src={BedRoom} alt="BedRoom" />
+            <p className="text-center mt-2 font-semiBold text-xl">Bedroom</p>
+          </div>
+        </div>
       </section>
     </div>
   );
