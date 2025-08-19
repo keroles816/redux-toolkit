@@ -19,6 +19,13 @@ const furnitureReducer = (state = initialState, action) => {
           cart: [...state.cart, { ...item, quantity: 1 }],
         };
       }
-    case dddd:
+    case REMOVE_FROM_THE_CART:
+      return {
+        ...state,
+        cart: state.cart.filter((i) => i.id !== action.payload),
+      };
+
+    default:
+      return state;
   }
 };
