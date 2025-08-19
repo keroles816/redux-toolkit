@@ -18,6 +18,8 @@ export const removeFromCart = (number) => {
   };
 };
 
+//fetched api
+
 export const FeatchFurnitureSuccess = (data) => {
   return {
     type: FETCH_FURNITURE_SUCCESS,

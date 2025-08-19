@@ -1,8 +1,12 @@
+import { initialState } from "./intialState";
 
-const initialState = {
-  furniture: [],
-  loading: true,
-  error,
-};
 
-const 
+const furnitureReducer = (state = initialState , action) => {
+    switch(action.type){
+        case    :
+            return{
+
+            }
+    }
+
+}
