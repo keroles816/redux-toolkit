@@ -15,7 +15,10 @@ const furnitureReducer = (state = initialState, action) => {
           ),
         };
       } else {
-        return {};
+        return {
+          cart: [...state.cart, { ...item, quantity: 1 }],
+        };
       }
+    case dddd:
   }
 };
