@@ -1,1 +1,8 @@
-const initialState = {};
+
+const initialState = {
+  furniture: [],
+  loading: true,
+  error,
+};
+
+const 
