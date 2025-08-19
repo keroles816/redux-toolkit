@@ -4,10 +4,10 @@ import { FETCH_FURNITURE_REQUEST } from "../furnitureAction/FETCH_FURNITURE_REQU
 import { FETCH_FURNITURE_SUCCESS } from "../furnitureAction/FETCH_FURNITURE_SUCCESS";
 import { FETCH_FURNITURE_ERORR } from "../furnitureAction/FETCH_FURNITURE_ERORR";
 
-export const addToCart = (number) => {
+export const addToCart = (item) => {
   return {
     type: ADD_TO_THE_CART,
-    payload: number,
+    payload: item,
   };
 };
 

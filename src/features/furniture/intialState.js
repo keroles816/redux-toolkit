@@ -1,7 +1,6 @@
-
 export const initialState = {
-    furniture: [],
-    cart: [],
-    loading: true,
-    error,
-  };
+  furniture: [],
+  loading: true,
+  error,
+  cart: [],
+};
