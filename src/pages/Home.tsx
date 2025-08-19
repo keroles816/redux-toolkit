@@ -8,30 +8,33 @@ const Home = () => {
     <div className=" min-w-full h-full">
       <NavBar />
 
-      <section className="min-w-full">
+      <section className="min-w-full ">
         <div
-          className="bg-cover bg-center h-screen relative"
+          className="bg-cover  bg-center h-screen flex  items-center md:relative"
           style={{ backgroundImage: `url(${backgroundHomeImage})` }}
         >
           <div
-            className="absolute 
-           right-10 top-1/2 transform -translate-y-1/2
+            className="md:absolute 
+            md:right-10 md:top-1/2 md:transform md:-translate-y-1/2
             bg-lightPrimary
             rounded-md
+            m-2
             "
           >
-            <div className="px-10 py-10 max-w-xl">
-              <p className=" font-poppins mt-4 text-xl">New Arrival</p>
-              <h3 className=" font-poppins font-bold text-darkPrimary text-5xl mt-2">
+            <div className="px-8 py-8 md:px-10 md:py-10 max-w-xl">
+              <p className=" font-poppins mt-2 md:mt-4 text-l md:text-xl">
+                New Arrival
+              </p>
+              <h3 className=" font-poppins font-bold text-darkPrimary text-3xl md:text-5xl mt-2">
                 Discover Our <br></br>New Collection
               </h3>
 
-              <p className="font-poppins mt-4 text-meduim text-l">
+              <p className="font-poppins mt-4 text-meduim text-s md:text-l">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis
               </p>
-              <button className="bg-primary py-4 mt-6 px-8 shadow-md ">
-                <p className="font-poppins text-white font-bold  text-l">
+              <button className="bg-primary  md:py-4 mt-6 py-3 px-6 md:px-8 shadow-md ">
+                <p className="font-poppins text-white font-semiBold md:font-bold text-s md:text-l">
                   BUY NOW
                 </p>
               </button>
@@ -45,7 +48,7 @@ const Home = () => {
           <h3 className="text-center font-poppins text-2xl font-bold ">
             Browse The Range
           </h3>
-          <p className="font-poppins font-light text-xl mt-2 font-[#666666]">
+          <p className="font-poppins text-center font-light text-l md:text-xl mt-2 font-[#666666]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
