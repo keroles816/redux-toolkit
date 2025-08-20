@@ -1,13 +1,15 @@
+import { useState ,useEffect } from "react";
 import NavBar from "../components/NavBar.tsx";
 import backgroundHomeImage from "../assets/photos/backgroundHomeImage.png";
 import Dining from "../assets/photos/Dining.png";
 import living from "../assets/photos/living.png";
 import BedRoom from "../assets/photos/BedRoom.png";
 import axios from "axios";
-import { useState } from "react";
 const Home = () => {
   const [furniture, setfurniture] = useState([]);
-  const fetchData = async () => {
+  
+
+  useEffect({
     try {
       const res = await axios.get(
         "https://dummyjson.com/products/category/furniture"
@@ -17,8 +19,7 @@ const Home = () => {
     } catch (error) {
       console.log("error" + error);
     }
-  };
-  fetchData();
+  },[])
 
   
 
