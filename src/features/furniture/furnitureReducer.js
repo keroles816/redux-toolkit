@@ -11,12 +11,12 @@ const furnitureReducer = (state = initialState, action) => {
         return {
           ...state,
           cart: state.cart.map((i) =>
-            i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+            i.id === item.id ? { ...i , quantity: i.quantity + 1 } : i
           ),
         };
       } else {
         return {
-          cart: [...state.cart, { ...item, quantity: 1 }],
+          cart: [...state.cart, { ...item , quantity: 1 }],
         };
       }
     case REMOVE_FROM_THE_CART:

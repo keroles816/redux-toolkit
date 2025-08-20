@@ -6,18 +6,21 @@ import BedRoom from "../assets/photos/BedRoom.png";
 import axios from "axios";
 import { useState } from "react";
 const Home = () => {
-  const [furniture, setfurniture] = useState();
+  const [furniture, setfurniture] = useState([]);
   const fetchData = async () => {
     try {
       const res = await axios.get(
         "https://dummyjson.com/products/category/furniture"
       );
       console.log(res.data.products);
+      setfurniture(res.data.products)
     } catch (error) {
       console.log("error" + error);
     }
   };
   fetchData();
+
+  
 
   return (
     <div className=" min-w-full h-full">
@@ -91,7 +94,11 @@ const Home = () => {
         <div
           className="grid grid-col-3 justify-center items-center 
         gap-3"
-        ></div>
+        >
+
+
+
+        </div>
       </section>
     </div>
   );
