@@ -8,19 +8,26 @@ import axios from "axios";
 const Home = () => {
   const [furniture, setfurniture] = useState([]);
   
+  
+  useEffect(()=>{
+    const fetchApi = async() =>{
+      try {
+        const res = await axios.get(
+          "https://dummyjson.com/products/category/furniture"
+        );
+        console.log(res.data.products)
+        setfurniture(res.data.products)
+  
+      } catch (error) {
+        console.log("error" + error);
+      }
 
-  useEffect({
-    try {
-      const res = await axios.get(
-        "https://dummyjson.com/products/category/furniture"
-      );
-      console.log(res.data.products);
-      setfurniture(res.data.products)
-    } catch (error) {
-      console.log("error" + error);
-    }
+    } 
+    fetchApi();
+    
   },[])
-
+  
+  console.log("comeing from state" + furniture)
   
 
   return (
@@ -96,6 +103,13 @@ const Home = () => {
           className="grid grid-col-3 justify-center items-center 
         gap-3"
         >
+          {furniture.map((i)=>{
+         
+            
+            return(
+            <p> {i.title} </p>
+            )
+          })}
 
 
 
