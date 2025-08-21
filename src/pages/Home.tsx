@@ -5,6 +5,7 @@ import Dining from "../assets/photos/Dining.png";
 import living from "../assets/photos/living.png";
 import BedRoom from "../assets/photos/BedRoom.png";
 import axios from "axios";
+import FurnitureItem from "../components/FurnitureItem.tsx";
 const Home = () => {
   const [furniture, setfurniture] = useState([]);
   
@@ -97,22 +98,18 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="max-w-8xl flex justify-center items-center">
+          <section className="max-w-8xl flex flex-col justify-center items-center">
         <h3 className=" font-poppins text-2xl font-bold"> Our Products</h3>
+      
         <div
-          className="grid grid-col-3 justify-center items-center 
-        gap-3"
-        >
-          {furniture.map((i)=>{
-         
-            
-            return(
-            <p> {i.title} </p>
+          className="grid md:grid-cols-2 lg:grid-cols-3">
+
+          {furniture.map((item) => {
+            return (
+              <FurnitureItem item = {item}  />
+           
             )
           })}
-
-
-
         </div>
       </section>
     </div>
