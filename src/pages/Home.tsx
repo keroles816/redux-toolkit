@@ -1,4 +1,4 @@
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar.tsx";
 import backgroundHomeImage from "../assets/photos/backgroundHomeImage.png";
 import Dining from "../assets/photos/Dining.png";
@@ -8,28 +8,23 @@ import axios from "axios";
 import FurnitureItem from "../components/FurnitureItem.tsx";
 const Home = () => {
   const [furniture, setfurniture] = useState([]);
-  
-  
-  useEffect(()=>{
-    const fetchApi = async() =>{
+
+  useEffect(() => {
+    const fetchApi = async () => {
       try {
         const res = await axios.get(
           "https://dummyjson.com/products/category/furniture"
         );
-        console.log(res.data.products)
-        setfurniture(res.data.products)
-  
+        console.log(res.data.products);
+        setfurniture(res.data.products);
       } catch (error) {
         console.log("error" + error);
       }
-
-    } 
+    };
     fetchApi();
-    
-  },[])
-  
-  console.log("comeing from state" + furniture)
-  
+  }, []);
+
+  console.log("comeing from state" + furniture);
 
   return (
     <div className=" min-w-full h-full">
@@ -98,17 +93,15 @@ const Home = () => {
         </div>
       </section>
 
-          <section className="max-w-8xl flex flex-col justify-center items-center">
+      <section className="max-w-8xl mt-4 flex flex-col justify-center items-center">
         <h3 className=" font-poppins text-2xl font-bold"> Our Products</h3>
-      
-        <div
-          className="grid md:grid-cols-2 lg:grid-cols-3">
 
+        <div
+          className="grid mt-4 max-md:grid-cols-2
+        gap-4 max-2xl:grid-cols-4  max-sm:grid-cols-1 "
+        >
           {furniture.map((item) => {
-            return (
-              <FurnitureItem item = {item}  />
-           
-            )
+            return <FurnitureItem item={item} />;
           })}
         </div>
       </section>
