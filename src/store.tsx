@@ -5,7 +5,7 @@ import { furnitureReducer } from "./features/furniture/furnitureReducer";
 
 const fetchApi = createStore(fetchApiReducer, applyMiddleware(thunk));
 
-export const rootReducer = {
+export const rootReducer = combineReducers({
   apiReducer: fetchApi,
   furnitureReducer,
-};
+});
