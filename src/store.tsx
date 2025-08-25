@@ -3,9 +3,9 @@ import { thunk } from "redux-thunk";
 import { fetchApiReducer } from "./features/furniture/fetchApiReducer";
 import { furnitureReducer } from "./features/furniture/furnitureReducer";
 
-const fetchApi = createStore(fetchApiReducer, applyMiddleware(thunk));
-
 export const rootReducer = combineReducers({
-  apiReducer: fetchApi,
+  apiReducer: fetchApiReducer,
   furnitureReducer,
 });
+
+const fetchApi = createStore(rootReducer, applyMiddleware(thunk));
